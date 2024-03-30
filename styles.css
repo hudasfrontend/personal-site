@@ -1,0 +1,1476 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#5B0E9F, #000000);
+}
+
+/*
+INTRO CSS
+*/
+
+.intro-background {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.intro-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/bg-home-texture.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    opacity: 0.2;
+    z-index: -2;
+}
+
+.intro-background > .intro-container {
+    display: grid;
+    grid-template-rows: 500px;
+    grid-template-columns: minmax(100px, 800px) minmax(100px, 400px);
+    position: relative;
+    column-gap: 2rem;
+    margin-top: 5em;
+}
+
+.intro-background > .intro-container > .intro-first {
+    text-align: start;
+    /*background-color: rgba(217, 191, 191, 0.441);*/
+}
+
+.intro-background > .intro-container > .intro-first > h1 {
+    position: relative;
+    color: #FFFFFF;
+    font-family: "Questrial", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.intro-background > .intro-container > .intro-first > h1::after {
+    content: "";
+    position: absolute;
+    background-color: #FFAFDF;
+    top: 49px;
+    left: 0;
+    z-index: -1;
+    height: 82px;
+    width: 700px;
+}
+
+.intro-background > .intro-container > .intro-first > p {
+    color: #FFFFFF;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+}
+
+.intro-background > .intro-container > .intro-first > .intro-links > a > img {
+    height: 30px;
+    width: 30px;
+}
+
+.intro-background > .intro-container > .intro-second {
+    border-radius: 5px;
+    text-align: center;
+}
+
+.intro-background > .intro-container > .intro-second > img {
+    height: 500px;
+    width: 400px;
+    border-radius: 150px;
+    filter: drop-shadow(0 0 0.75rem #FFAFDF);
+}
+
+/*
+ABOUT ME CSS
+*/
+
+.about-me-background {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me-background > .about-me-container {
+    display: grid;
+    grid-template-rows: 120px 550px;
+    grid-template-columns: minmax(100px, 600px) minmax(100px, 600px);
+    position: relative;
+    row-gap: 0.2rem;
+    column-gap: 2rem;
+    margin-top: 5em;
+}
+
+.about-me-background > .about-me-container > .main-title {
+    grid-column: span 2;
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    color: #FFAFDF;
+}
+
+.about-me-background > .about-me-container > .main-title > span {
+    position: relative;
+    font-family: "Questrial", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    color: #FFFFFF;
+}
+
+.about-me-background > .about-me-container > .main-title > span::after {
+    content: "";
+    position: absolute;
+    background-color: #FFAFDF;
+    top: 14px;
+    left: 0;
+    z-index: -1;
+    height: 16px;
+    width: 270px;
+}
+
+.about-me-background > .about-me-container > .about-me-first {
+    text-align: start;
+}
+
+.about-me-background > .about-me-container > .about-me-first > img {
+    height: 550px;
+    width: 500px;
+}
+
+.about-me-background > .about-me-container > .about-me-second {
+    text-align: start;
+}
+
+.about-me-background > .about-me-container > .about-me-second > h3 {
+    font-family: "Questrial", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    color: #FFFFFF;
+}
+
+.about-me-background > .about-me-container > .about-me-second > h3 > span {
+    color: #FFAFDF;
+}
+
+.about-me-background > .about-me-container > .about-me-second > p {
+    color: #FFFFFF;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.about-me-background > .about-me-container > .about-me-second > .about-info-list {
+    display: grid;
+    grid-template-rows: repeat(3, 70px);
+    grid-template-columns: 220px 220px;
+    column-gap: 2rem;
+    margin-bottom: 45px;
+}
+
+.about-me-background > .about-me-container > .about-me-second > .about-info-list > .info-title {
+    color: #FFAFDF;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.about-me-background > .about-me-container > .about-me-second > .about-info-list > .info-title > span {
+    color: #FFFFFF;
+}
+
+.about-me-background > .about-me-container > .about-me-second > .cv-button > a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+    width: 220px;
+    height: 45px;
+    border: 1px solid #FFAFDF;
+    border-radius: 2rem;
+    transition: 0.6s ease;
+    text-decoration: none;
+}
+
+.about-me-background > .about-me-container > .about-me-second > .cv-button > a:hover {
+    background-color: #FFAFDF;
+}
+
+.about-me-background > .about-me-container > .about-me-second > .cv-button > a > p {
+    color: #FFFFFF;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.about-me-background > .about-me-container > .about-me-second > .cv-button > a > div{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 2rem;
+    background-color: #FFAFDF;
+    text-align: center;
+}
+
+.about-me-background > .about-me-container > .about-me-second > .cv-button > a > div > img{
+    margin-top: 7.5px;
+    width: 30px;
+    height: 30px;
+}
+
+/*
+SERVICES CSS
+*/
+
+.services-background {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.services-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/bg-services-texture.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    opacity: 0.2;
+    z-index: -2;
+}
+
+.services-background > .services-container {
+    display: grid;
+    grid-template-rows: 120px 480px;
+    grid-template-columns: repeat(3, minmax(100px, 300px));
+    position: relative;
+    row-gap: 0.5rem;
+    column-gap: 166px;
+    margin-top: 5em;
+}
+
+.services-background > .services-container > .main-title {
+    grid-column: span 3;
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    color: #FFAFDF;
+}
+
+.services-background > .services-container > .main-title > span {
+    position: relative;
+    font-family: "Questrial", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    color: #FFFFFF;
+}
+
+.services-background > .services-container > .main-title > span::after {
+    content: "";
+    position: absolute;
+    background-color: #FFAFDF;
+    top: 15px;
+    left: 0;
+    z-index: -1;
+    height: 16px;
+    width: 280px;
+}
+
+.services-background > 
+.services-container > 
+.service-one, 
+.service-two, 
+.service-three {
+    background: linear-gradient(#BB98E2, #FFAFDF);
+    border-radius: 1.5rem;
+    filter: drop-shadow(#5a5858 1rem 1rem 5px);
+    text-align: center;
+    width: 300px;
+    height: 400px;
+}
+
+.services-background > 
+.services-container > 
+.service-one,  
+.service-three {
+    margin-top: 60px;
+}
+
+.services-background > 
+.services-container > 
+.service-one > img, 
+.service-two > img, 
+.service-three > img {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+}
+
+.services-background > 
+.services-container > 
+.service-one > h3, 
+.service-two > h3, 
+.service-three > h3 {
+    font-family: "Questrial", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.services-background > 
+.services-container > 
+.service-one > p, 
+.service-two > p, 
+.service-three > p {
+    color: #FFFFFF;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin-top: 30px;
+}
+
+/*
+SKILLS CSS
+*/
+
+.skills-container {
+    display: grid;
+    grid-template-rows: 120px 480px;
+    grid-template-columns: minmax(400px, 1232px);
+    position: relative;
+    row-gap: 0.7rem;
+    margin-top: 5em;
+}
+
+.skills-container > .main-title {
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    color: #FFAFDF;
+}
+
+.skills-container > .main-title > span {
+    position: relative;
+    font-family: "Questrial", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    color: #FFFFFF;
+}
+
+.skills-container > .main-title > span::after {
+    content: "";
+    position: absolute;
+    background-color: #FFAFDF;
+    top: 15px;
+    left: 0;
+    z-index: -1;
+    height: 17px;
+    width: 535px;
+}
+
+.skills-container > .skills {
+    display: grid;
+    grid-template-rows: 480px;
+    grid-template-columns: 616px 616px;
+    position: relative;
+    border: 1px solid #FFAFDF;
+    border-radius: 1.5rem;
+}
+
+.skills-container > .skills::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/bg-skills-texture.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    opacity: 0.2;
+    z-index: -2;
+}
+
+.skills-container > .skills > .language-skills,
+.skills-container > .skills > .computer-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.skills-container > .skills > .language-skills > h3,
+.skills-container > .skills > .computer-skills > h3 {
+    font-family: "Questrial", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    color: #FFFFFF;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.skills-container > .skills > .language-skills > .langauge-list,
+.skills-container > .skills > .language-skills > .framework-list,
+.skills-container > .skills > .computer-skills > .computer-list {
+    display: flex;
+    gap: 3rem;
+    margin-left: 40px;
+}
+
+.skills-container > .skills > .language-skills > .langauge-list > img,
+.skills-container > .skills > .language-skills > .framework-list > .bootstrap,
+.skills-container > .skills > .computer-skills > .computer-list > .adobe-xd,
+.skills-container > .skills > .computer-skills > .computer-list > .vs-code {
+    width: 80px;
+    height: 80px;
+}
+
+.skills-container > .skills > .language-skills > .framework-list > .tailwind-css {
+    width: 90px;
+    height: 70px;
+}
+
+.skills-container > .skills > .language-skills > .framework-list > .react-js {
+    width: 80px;
+    height: 70px;
+}
+
+.skills-container > .skills > .computer-skills > .computer-list > .figma {
+    width: 70px;
+    height: 80px;
+}
+
+.skills-container > .skills > .language-skills > .langauge-list > img,
+.skills-container > .skills > .language-skills > .framework-list > img,
+.skills-container > .skills > .computer-skills > .computer-list > img {
+    cursor: pointer;
+}
+
+.skills-container > .skills > .computer-skills {
+    width: 616px;
+    height: 480px;
+    background: linear-gradient(#BB98E2, #FFAFDF);
+    border-radius: 1.5rem;
+}
+
+/*
+EXPERIENCE CSS
+*/
+
+.experience-container {
+    display: grid;
+    grid-template-rows: 120px 250px;
+    grid-template-columns: minmax(400px, 1232px) ;
+    position: relative;
+    row-gap: 0.7rem;
+    margin-top: 5em;
+}
+
+.experience-container > .main-title {
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;                                                                    
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    color: #FFAFDF;
+}
+
+.experience-container > .main-title > span {
+    position: relative;
+    font-family: "Questrial", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    color: #FFFFFF;
+}
+
+.experience-container > .main-title > span::after {
+    content: "";
+    position: absolute;
+    background-color: #FFAFDF;
+    top: 15px;
+    left: 0;
+    z-index: -1;
+    height: 17px;
+    width: 450px;
+}
+
+.experience-container > .experience-one {
+    display: grid;
+    grid-template-rows: 90px 80px 90px;
+    grid-template-columns: 600px 600px;
+    background: linear-gradient(#BB98E2, #FFAFDF);
+    row-gap: 10px;
+    width: 1232px;
+    height: 300px;
+    border-radius: 1.5rem;
+}
+
+.experience-container > .experience-one > .main-info {
+    grid-column: span 2;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+.experience-container > .experience-one > .main-info > .position {
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    color: #ffdff2;
+}
+
+.experience-container > .experience-one > .main-info > .position > span {
+    font-family: "Questrial", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    color: #FFFFFF;
+}
+
+.experience-container > .experience-one > .years {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+    margin-right: 30px;
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    color: #ffdff2;
+}
+
+.experience-container > .experience-one > .experience-details {
+    grid-column: span 2;
+    color: #FFFFFF;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin-left: 30px;
+}
+
+.experience-container > .experience-one > .company-logo {
+    width: 90px;
+    height: 80px;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+/*
+PROJECTS CSS
+*/
+
+.projects-background {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.projects-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/bg-projects-texture.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    opacity: 0.2;
+    z-index: -2;
+}
+
+.projects-background > .projects-container {
+    display: grid;
+    grid-template-rows: 120px 600px 600px;
+    grid-template-columns: minmax(100px, 600px) minmax(100px, 600px);
+    column-gap: 32px;
+    row-gap: 5px;
+    margin-top: 5em;
+}
+
+.projects-background > .projects-container > .main-title {
+    grid-column: span 2;
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    color: #FFAFDF;
+}
+
+.projects-background > .projects-container > .main-title > span {
+    position: relative;
+    font-family: "Questrial", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    color: #FFFFFF;
+}
+
+.projects-background > .projects-container > .main-title > span::after {
+    content: "";
+    position: absolute;
+    background-color: #FFAFDF;
+    top: 15px;
+    left: 0;
+    z-index: -1;
+    height: 17px;
+    width: 455px;
+}
+
+.projects-background > .projects-container > .project-one {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    width: 600px;
+    height: 600px;
+}
+
+.projects-background > .projects-container > .project-two {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 600px;
+    height: 600px;
+}
+
+.projects-background > .projects-container > .project-three {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 600px;
+    height: 600px;
+}
+
+.projects-background > .projects-container > .project-one > img,
+.projects-background > .projects-container > .project-two > img,
+.projects-background > .projects-container > .project-three > img {
+    width: 600px;
+    height: 600px;
+}
+
+.projects-background > .projects-container > .project-one::after {
+    content: "";
+    position: absolute;
+    bottom: 185px;
+    left: 75px;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/project-one.png");
+    background-size: 450px 280px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    z-index: 2;
+}
+
+.projects-background > .projects-container > .project-two::after {
+    content: "";
+    position: absolute;
+    bottom: 185px;
+    left: 75px;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/project-two.png");
+    background-size: 450px 280px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    z-index: 2;
+}
+
+.projects-background > .projects-container > .project-three::after {
+    content: "";
+    position: absolute;
+    bottom: 185px;
+    left: 75px;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/project-three.png");
+    background-size: 450px 280px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    z-index: 2;
+}
+
+/*
+INTERESTS CSS
+*/
+
+.interests-container {
+    display: grid;
+    grid-template-rows: 120px 400px;
+    grid-template-columns: minmax(100px, 1232px) ;
+    row-gap: 0.2rem;
+    margin-top: 5em;
+}
+
+.interests-container > .main-title {
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    color: #FFAFDF;
+}
+
+.interests-container > .main-title > span {
+    position: relative;
+    font-family: "Questrial", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    color: #FFFFFF;
+}
+
+.interests-container > .main-title > span::after {
+    content: "";
+    position: absolute;
+    background-color: #FFAFDF;
+    top: 15px;
+    left: 0;
+    z-index: -1;
+    height: 17px;
+    width: 370px;
+}
+
+.interests-container > .gallery > p {
+    color: #FFFFFF;
+    font-family: "Questrial", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+}
+
+/*
+CONTACT CSS
+*/
+
+.contact-background {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.contact-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/bg-contact-texture.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    opacity: 0.2;
+    z-index: -2;
+}
+
+.contact-background > .contact-container {
+    display: grid;
+    grid-template-rows: 120px 600px 70px;
+    grid-template-columns: minmax(100px, 616px)  minmax(100px, 616px);
+    row-gap: 0.2rem;
+    margin-top: 5em;
+}
+
+.contact-background > .contact-container > .main-title {
+    grid-column: span 2;
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    color: #FFAFDF;
+}
+
+.contact-background > .contact-container > .main-title > span {
+    position: relative;
+    font-family: "Questrial", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    color: #FFFFFF;
+}
+
+.contact-background > .contact-container > .main-title > span::after {
+    content: "";
+    position: absolute;
+    background-color: #FFAFDF;
+    top: 15px;
+    left: 0;
+    z-index: -1;
+    height: 17px;
+    width: 578px;
+}
+
+.contact-background > .contact-container > .contact-info {
+    border-right: 1px solid #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.contact-background > .contact-container > .contact-info > h3 {
+    font-family: "Questrial", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    color: #FFFFFF;
+}
+
+.contact-background > .contact-container > .contact-info > p {
+    color: #FFFFFF;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.contact-background > .contact-container > .contact-info > .contact-info-list {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 50px 500px;
+    column-gap: 0.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-background > .contact-container > .contact-info > .contact-info-list > .address-icon > img,
+.contact-background > .contact-container > .contact-info > .contact-info-list > .email-icon > img,
+.contact-background > .contact-container > .contact-info > .contact-info-list > .phone-icon > img {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.contact-background > .contact-container > .contact-info > .contact-info-list > .address-info > .main-title,
+.contact-background > .contact-container > .contact-info > .contact-info-list > .email-info > .main-title,
+.contact-background > .contact-container > .contact-info > .contact-info-list > .phone-info > .main-title {
+    font-family: "Questrial", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    color: #FFFFFF;
+}
+
+.contact-background > .contact-container > .contact-info > .contact-info-list > .address-info > .main-title > span,
+.contact-background > .contact-container > .contact-info > .contact-info-list > .email-info > .main-title > span,
+.contact-background > .contact-container > .contact-info > .contact-info-list > .phone-info > .main-title > span {
+    color: #FFFFFF;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.contact-background > .contact-container > .contact-info > .contact-links > a > img {
+    height: 30px;
+    width: 30px;
+}
+
+.contact-background > .contact-container > .sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 300px;
+}
+
+.contact-background > .contact-container > .sections > p {
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    color: #FFAFDF;
+}
+
+.contact-background > .contact-container > .copyright {
+    grid-column: span 2;
+    color: #FFFFFF;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 10px;
+}
+
+
+/*
+RESPONSIVE CSS
+*/
+
+@media (max-width: 992px) {
+
+/*
+INTRO CSS
+*/
+
+    .intro-background > .intro-container {
+        display: grid;
+        grid-template-rows: 300px 300px;
+        grid-template-columns: 400px;
+        row-gap: 10px;
+    }
+
+    .intro-background > .intro-container > .intro-first {
+        order: 2;
+    }
+
+    .intro-background > .intro-container > .intro-first > h1 {
+        position: relative;
+        font-size: 2.5rem;
+    }
+    
+    .intro-background > .intro-container > .intro-first > h1::after {
+        content: "";
+        position: absolute;
+        background-color: #FFAFDF;
+        top: 24px;
+        height: 43px;
+        width: 400px;
+    }
+    
+    .intro-background > .intro-container > .intro-first > p {
+        font-size: 1rem;
+    }
+    
+    .intro-background > .intro-container > .intro-first > .intro-links > a > img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .intro-background > .intro-container > .intro-second {
+        order: 1;
+    }
+    
+    .intro-background > .intro-container > .intro-second > img {
+        height: 300px;
+        width: 220px;
+    }
+
+
+/*
+ABOUT ME CSS
+*/
+
+
+    .about-me-background > .about-me-container {
+        display: grid;
+        grid-template-rows: 120px 300px 300px;
+        grid-template-columns: 400px;
+        row-gap: 10px;
+    }
+    
+    .about-me-background > .about-me-container > .main-title {
+        grid-column: span 1;
+        font-size: 0.5rem;
+    }
+    
+    .about-me-background > .about-me-container > .main-title > span {
+        font-size: 1.7rem;
+    }
+    
+    .about-me-background > .about-me-container > .main-title > span::after {
+        top: 8px;
+        height: 8px;
+        width: 180px;
+    }
+    
+    .about-me-background > .about-me-container > .about-me-first {
+        text-align: center;
+    }
+
+    .about-me-background > .about-me-container > .about-me-first > img {
+        height: 300px;
+        width: 300px;
+    }
+    
+    .about-me-background > .about-me-container > .about-me-second {
+        margin-top: 20px;
+    }
+
+    .about-me-background > .about-me-container > .about-me-second > h3 {
+        font-size: 1rem;
+    }
+
+    .about-me-background > .about-me-container > .about-me-second > p {
+        font-size: 0.7rem;
+    }
+    
+    .about-me-background > .about-me-container > .about-me-second > .about-info-list {
+        display: grid;
+        grid-template-rows: repeat(3, 40px);
+        grid-template-columns: 120px 120px;
+        column-gap: 2rem;
+        margin-bottom: 38px;
+    }
+    
+    .about-me-background > .about-me-container > .about-me-second > .about-info-list > .info-title {
+        font-size: 0.6rem;
+    }
+    
+    .about-me-background > .about-me-container > .about-me-second > .cv-button > a {
+        gap: 1.3rem;
+        width: 200px;
+        height: 35px;
+    }
+    
+    .about-me-background > .about-me-container > .about-me-second > .cv-button > a > p {
+        font-size: 0.9rem;
+    }
+    
+    .about-me-background > .about-me-container > .about-me-second > .cv-button > a > div{
+        width: 35px;
+        height: 35px;
+    }
+    
+    .about-me-background > .about-me-container > .about-me-second > .cv-button > a > div > img{
+        width: 20px;
+        height: 20px;
+    }
+
+/*
+SERVICES CSS
+*/
+
+    .services-background > .services-container {
+        display: grid;
+        grid-template-rows: 120px 200px 200px 200px;
+        grid-template-columns: 400px;
+        row-gap: 30px;
+    }
+
+    .services-background > .services-container > .main-title {
+        grid-column: span 1;
+        font-size: 0.5rem;
+    }
+
+    .services-background > .services-container > .main-title > span {
+        font-size: 1.7rem;
+    }
+
+    .services-background > .services-container > .main-title > span::after {
+        top: 8px;
+        height: 8px;
+        width: 190px;
+    }
+
+    .services-background > 
+    .services-container > 
+    .service-one, 
+    .service-two, 
+    .service-three {
+        width: 400px;
+        height: 200px;
+    }
+
+    .services-background > 
+    .services-container > 
+    .service-one,  
+    .service-three {
+        margin-top: 0;
+    }
+
+    .services-background > 
+    .services-container > 
+    .service-one > img, 
+    .service-two > img, 
+    .service-three > img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .services-background > 
+    .services-container > 
+    .service-one > h3, 
+    .service-two > h3, 
+    .service-three > h3 {
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    .services-background > 
+    .services-container > 
+    .service-one > p, 
+    .service-two > p, 
+    .service-three > p {
+        font-size: 0.7rem;
+    }
+
+/*
+SKILLS CSS
+*/
+
+    .skills-container {
+        display: grid;
+        grid-template-rows: 100px 800px;
+        grid-template-columns: 400px;
+    }
+
+    .skills-container > .main-title {
+        font-size: 0.5rem;
+    }
+
+    .skills-container > .main-title > span {
+        font-size: 1.7rem;
+    }
+
+    .skills-container > .main-title > span::after {
+        top: 8px;
+        height: 9px;
+        width: 365px;
+    }
+
+    .skills-container > .skills {
+        display: grid;
+        grid-template-rows: 400px;
+        grid-template-columns: 400px;
+    }
+
+    .skills-container > .skills > .language-skills,
+    .skills-container > .skills > .computer-skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .skills-container > .skills > .language-skills > h3,
+    .skills-container > .skills > .computer-skills > h3 {
+        font-size: 1rem;
+    }
+
+    .skills-container > .skills > .language-skills > .langauge-list > img,
+    .skills-container > .skills > .language-skills > .framework-list > .bootstrap,
+    .skills-container > .skills > .computer-skills > .computer-list > .adobe-xd,
+    .skills-container > .skills > .computer-skills > .computer-list > .vs-code {
+        width: 50px;
+        height: 50px;
+    }
+
+    .skills-container > .skills > .language-skills > .framework-list > .tailwind-css {
+        width: 60px;
+        height: 40px;
+    }
+
+    .skills-container > .skills > .language-skills > .framework-list > .react-js {
+        width: 50px;
+        height: 40px;
+    }
+
+    .skills-container > .skills > .computer-skills > .computer-list > .figma {
+        width: 40px;
+        height: 50px;
+    }
+    .skills-container > .skills > .computer-skills {
+        width: 400px;
+        height: 400px;
+    }
+
+/*
+EXPERIENCE CSS
+*/
+
+    .experience-container {
+        display: grid;
+        grid-template-rows: 100px 300px;
+        grid-template-columns: 400px;
+    }
+
+    .experience-container > .main-title {                                                                  
+        font-size: 0.5rem;
+    }
+
+    .experience-container > .main-title > span {
+        font-size: 1.7rem;
+    }
+
+    .experience-container > .main-title > span::after {
+        top: 9px;
+        height: 8px;
+        width: 300px;
+    }
+
+    .experience-container > .experience-one {
+        display: grid;
+        grid-template-rows: 90px 60px 100px;
+        grid-template-columns: 300px 100px;
+        row-gap: 10px;
+        width: 400px;
+        height: 300px;
+    }
+
+    .experience-container > .experience-one > .company-logo {
+        width: 70px;
+        height: 60px;
+    }
+
+    .experience-container > .experience-one > .years {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 0.6rem;
+        width: 90px;
+    }
+    
+    .experience-container > .experience-one > .main-info {
+        margin-top: 25px;
+        margin-left: 30px;
+        width: 250px;
+    }
+    
+    .experience-container > .experience-one > .main-info > .position {
+        font-size: 0.5rem;
+    }
+    
+    .experience-container > .experience-one > .main-info > .position > span {
+        font-size: 1rem;
+    }
+    
+    .experience-container > .experience-one > .experience-details {
+        font-size: 0.7rem;
+        width: 250px;
+    }
+    
+/*
+PROJECTS CSS
+*/
+
+    .projects-background > .projects-container {
+        display: grid;
+        grid-template-rows: 100px 350px 350px 350px;
+        grid-template-columns: 400px;
+    }
+
+    .projects-background > .projects-container > .main-title {
+        grid-column: span 1;
+        font-size: 0.5rem;
+    }
+
+    .projects-background > .projects-container > .main-title > span {
+        font-size: 1.7rem;
+    }
+
+    .projects-background > .projects-container > .main-title > span::after {
+        top: 9px;
+        height: 8px;
+        width: 305px;
+    }
+
+    .projects-background > .projects-container > .project-one {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        height: 500px;
+    }
+
+    .projects-background > .projects-container > .project-two {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        height: 500px;
+    }
+
+    .projects-background > .projects-container > .project-three {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        height: 500px;
+    }
+
+    .projects-background > .projects-container > .project-one > img,
+    .projects-background > .projects-container > .project-two > img,
+    .projects-background > .projects-container > .project-three > img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .projects-background > .projects-container > .project-one::after {
+        bottom: 230px;
+        left: 65px;
+        background-size: 270px 180px;
+    }
+
+    .projects-background > .projects-container > .project-two::after {
+        bottom: 230px;
+        left: 65px;
+        background-size: 270px 180px;
+    }
+
+    .projects-background > .projects-container > .project-three::after {
+        bottom: 230px;
+        left: 65px;
+        background-size: 270px 180px;
+    }
+
+/*
+INTERESTS CSS
+*/
+
+    .interests-container {
+        display: grid;
+        grid-template-rows: 100px 150px;
+        grid-template-columns: 400px;
+    }
+
+    .interests-container > .main-title {
+        font-size: 0.5rem;
+    }
+
+    .interests-container > .main-title > span {
+        font-size: 1.7rem;
+    }
+
+    .interests-container > .main-title > span::after {
+        top: 8px;
+        height: 8px;
+        width: 248px;
+    }
+
+    .interests-container > .gallery > p {
+        font-size: 2.5rem;
+    }
+
+/*
+CONTACT CSS
+*/
+
+    .contact-background > .contact-container {
+        display: grid;
+        grid-template-rows: 100px 350px 70px;
+        grid-template-columns: 200px 200px;
+    }
+
+    .contact-background > .contact-container > .main-title {
+        grid-column: span 2;
+        font-size: 0.5rem;
+    }
+
+    .contact-background > .contact-container > .main-title > span {
+        font-size: 1.7rem;
+    }
+
+    .contact-background > .contact-container > .main-title > span::after {
+        top: 8px;
+        height: 8px;
+        width: 390px;
+    }
+
+    .contact-background > .contact-container > .contact-info > h3 {
+        font-size: 1rem;
+    }
+
+    .contact-background > .contact-container > .contact-info > p {
+        font-size: 0.7rem;
+    }
+
+    .contact-background > .contact-container > .contact-info > .contact-info-list {
+        display: grid;
+        grid-template-rows: 50px 50px 50px;
+        grid-template-columns: 50px 150px;
+        column-gap: 0px;
+        margin-bottom: 20px;
+    }
+
+    .contact-background > .contact-container > .contact-info > .contact-info-list > .address-icon > img,
+    .contact-background > .contact-container > .contact-info > .contact-info-list > .email-icon > img,
+    .contact-background > .contact-container > .contact-info > .contact-info-list > .phone-icon > img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contact-background > .contact-container > .contact-info > .contact-info-list > .address-info > .main-title,
+    .contact-background > .contact-container > .contact-info > .contact-info-list > .email-info > .main-title,
+    .contact-background > .contact-container > .contact-info > .contact-info-list > .phone-info > .main-title {
+        font-size: 0.7rem;
+        margin-top: 20px;
+    }
+
+    .contact-background > .contact-container > .contact-info > .contact-info-list > .address-info > .main-title > span,
+    .contact-background > .contact-container > .contact-info > .contact-info-list > .email-info > .main-title > span,
+    .contact-background > .contact-container > .contact-info > .contact-info-list > .phone-info > .main-title > span {
+        font-size: 0.5rem;
+    }
+
+    .contact-background > .contact-container > .contact-info > .contact-links > a > img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .contact-background > .contact-container > .sections {
+        margin-left: 100px;
+    }
+
+    .contact-background > .contact-container > .sections > p {
+        font-size: 0.7rem;
+    }
+
+    .contact-background > .contact-container > .copyright {
+        font-size: 0.7rem;
+    }
+}
